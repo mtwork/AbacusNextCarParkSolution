@@ -18,6 +18,10 @@ namespace AbacusNext_CarParkSolution
             EndTime = _endTime;
         }
 
+        /// <summary>
+        /// Calculate the charges for both shortStay and longstay
+        /// </summary>
+        /// <returns></returns>
         public double CalculateCharges()
         {
             double charges = 0;           
@@ -40,6 +44,12 @@ namespace AbacusNext_CarParkSolution
             return Math.Round(charges,2); 
         }
 
+        /// <summary>
+        /// retuen parkinghours for shotstay 
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <returns></returns>
         private int GetParkingChargeHours(DateTime from, DateTime to)
         {            
             int Hours = 0;
